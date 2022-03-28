@@ -2,7 +2,7 @@ import Card from "./components/Card"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
 import './App.css';
-import { useState, useEffect, useMemo, useCallback} from "react"
+import { useState } from "react"
 import axios from "axios"
 
 
