@@ -9,6 +9,7 @@ const Card = ({ city, setCity, result, getWeather}) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        if(!city) return
         await getWeather();
         setCity("")
         return

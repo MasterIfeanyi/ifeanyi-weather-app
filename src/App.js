@@ -14,17 +14,11 @@ function App() {
 
   
   const getWeather = async () => {
-
-    if(!city) return
-
       try {
       const apiKey = "41ade4ff907582d51d1618d3c47281e8"
       const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
     
       setResult(data)
-      console.log(data)
-
-      return data
     } catch(err){
       console.log(err.message)
     }
@@ -47,9 +41,6 @@ function App() {
       const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`)
     
       setResult(data)
-      console.log(data)
-
-      return data
     } catch(err){
       console.log(err.message)
     }
