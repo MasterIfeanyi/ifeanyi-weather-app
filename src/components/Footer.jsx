@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer>
-        <p>Chima Ifeanyi &copy; {today.getFullYear()}</p>
+      <p>Chima Ifeanyi &copy; {today.getFullYear()}</p>
     </footer>
   )
 }
